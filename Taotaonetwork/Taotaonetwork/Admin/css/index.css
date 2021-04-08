@@ -1,0 +1,80 @@
+﻿body {
+    margin: 0px 0px;
+}
+
+ul, dl, dd, h1, h2, h3, h4, h5, h6, form, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0px;
+}
+
+.top {
+    overflow: hidden;
+}
+
+a {
+    color: #676767;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.banner {
+    width: 800px;
+    float: left;
+}
+
+    .banner ul#imgs {
+        width: 800px;
+        height: 240px;
+        overflow: hidden;
+    }
+
+#right-top {
+    height: 240px;
+}
+
+#numbers {
+    margin-left: 370px;
+    position: absolute;
+    margin-top: -45px;
+}
+
+    #numbers li {
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        border: solid 1px #999;
+        margin-right: 3px;
+        font-size: 13px;
+        line-height: 18px;
+        cursor: pointer;
+        float: left;
+        background-color: white;
+    }
+
+        #numbers li.number_over {
+            border: 1px solid #F90;
+            background-color: greenyellow;
+            color: white;
+        }
+

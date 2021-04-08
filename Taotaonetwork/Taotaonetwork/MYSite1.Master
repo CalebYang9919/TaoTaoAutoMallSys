@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MYSite1.master.cs" Inherits="Taotaonetwork.MYSite1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navul li a {
+            height: 40px;
+            line-height: 20px;
+            color: white;
+        }
+
+        #navul li {
+            margin-right: -10px;
+        }
+
+            #navul li a:hover {
+                background-color: #3C763D;
+            }
+
+            #navul li a:visited {
+                background-color: #3C763D;
+            }
+
+        #liul1 {
+            display: none;
+        }
+
+        #navul li:hover ul {
+            display: block;
+        }
+
+        #liul1 li a:hover {
+            background-color: #5CB85C;
+        }
+
+        #liul1 li a:visited {
+            background-color: #5CB85C;
+        }
+
+        #liul1 li a {
+            color: black;
+            margin-right: 10px;
+            border: 1px solid #4CAE4C;
+            margin-top: -2px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color:#f3f3f3;">
+        <div style="width: 100%; height: 30px; border: 1px solid #A6E1EC; background-color: #67B168;">
+            <div class="container">
+                <% if (Session["username"] == null)
+                   { %>
+                <p style="line-height: 30px; margin-left: 10px;">您好，欢迎来到淘淘商场！请&nbsp;<a href="Login.aspx">登录</a>&nbsp;&nbsp;<a href="Register.aspx">注册</a></p>
+                <%}
+                   else
+                   { %>
+                <p style="line-height: 30px; margin-left: 10px;"><%= Session["username"]%>已登录&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注销</a></p>
+                <%} %>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/logo.png" class="pull-left">
+            <div class="pull-left" style="margin-left: 50px;">
+                <input style="width: 300px; margin-top: 55px; margin-left: 250px;" type="text" class="form-control pull-left">
+                <input type="button" value="搜索" class="btn btn-success" style="margin-top: 55px; margin-left: 10px;">
+            </div>
+        </div>
+        <div style="width: 100%; height: 40px; background-color: #5CB85C;">
+            <div class="container">
+                <nav class="nav navbar-nav">
+                    <ul class="nav nav-pills" id="navul" style="width: 1000px; text-align: center;">
+
+                        <li class="col-lg-2">
+                            <a href="Index.aspx">首页</a>
+                        </li>
+                        <li class="col-lg-2">
+                            <a href="#">配件商城</a>
+                        </li>
+                        <li class="col-lg-2">
+                            <a href="#">汽配安装店</a>
+                        </li>
+                        <li class="col-lg-2">
+                            <a href="#">车友社区</a>
+                        </li>
+                        <li class="col-lg-2">
+                            <a href="#">帮助</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <hr style="border:1px solid #C0C0C0;margin-top:50px;"/>
+		<div class="container" style="text-align:center;color:#9D9D9D;">
+			<p >CopyRight©2007-2014Taotao Inc.All Rights Reserved 沪ICP备02110488号</p>
+			<p>上海淘淘科技有限公司 版权所有 站长统计 服务邮箱 service@taotao.com</p>
+		</div>
+            </div>
+    </form>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

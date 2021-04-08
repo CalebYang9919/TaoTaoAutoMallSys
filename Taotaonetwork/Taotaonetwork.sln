@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaotaonetworkUI", "Taotaonetwork\TaotaonetworkUI.csproj", "{4F7F29F4-07EC-4BAA-8DBE-3A95A4BA7C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{77E32A1F-E276-4B9E-AAB2-50CCB897073C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A152FD08-1BA6-4BF1-936E-91D2D61BDBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{A2E3B608-7065-4403-8F90-4303E6D218A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F7F29F4-07EC-4BAA-8DBE-3A95A4BA7C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7F29F4-07EC-4BAA-8DBE-3A95A4BA7C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7F29F4-07EC-4BAA-8DBE-3A95A4BA7C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7F29F4-07EC-4BAA-8DBE-3A95A4BA7C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E32A1F-E276-4B9E-AAB2-50CCB897073C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E32A1F-E276-4B9E-AAB2-50CCB897073C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E32A1F-E276-4B9E-AAB2-50CCB897073C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E32A1F-E276-4B9E-AAB2-50CCB897073C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A152FD08-1BA6-4BF1-936E-91D2D61BDBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A152FD08-1BA6-4BF1-936E-91D2D61BDBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A152FD08-1BA6-4BF1-936E-91D2D61BDBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A152FD08-1BA6-4BF1-936E-91D2D61BDBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E3B608-7065-4403-8F90-4303E6D218A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E3B608-7065-4403-8F90-4303E6D218A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E3B608-7065-4403-8F90-4303E6D218A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E3B608-7065-4403-8F90-4303E6D218A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
